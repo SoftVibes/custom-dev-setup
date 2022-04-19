@@ -1,6 +1,6 @@
 # Custom Dev Setup (using BASH)
 
-This is a custom set of BASH scripts I wrote to quickly setup some basic development tools when moving to a new environment. However, this uses APT which is why this won't work on Windows :( This will install Python, NodeJS, GNU C++ & Visual Studio Code and also install some scripts that help setup projects easily.
+This is a custom set of BASH scripts I wrote to quickly setup some basic development tools when moving to a new environment. However, this uses APT and Linux file structure which is why this won't work on Windows :( This will install Python, NodeJS, GNU C++ & Visual Studio Code and also install some scripts that help setup projects easily.
 
 
 ## What each script does
