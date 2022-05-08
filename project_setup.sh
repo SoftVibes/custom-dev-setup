@@ -23,29 +23,13 @@ then
 elif [ $1 == "install" ]
 then
 
-    cp './project.sh' '/usr/local/bin/project.sh'
-
-    cd /home/$USER/
-    if [ -f "bash_aliases" ]
-    then
-        echo "alias project=\"project.sh\"" >> .bash_aliases
-        echo "alias run=\"./run.sh\"" >> .bash_aliases
-
-    else
-        touch .bash_aliases
-        echo "alias project=\"project.sh\"" >> .bash_aliases
-        echo "alias run=\"./run\"" >> .bash_aliases
-    fi
+    cp './project.sh' '/usr/local/bin/project'
 
 elif [ $1 == "uninstall" ]
 then
     cd /usr/local/bin/
-    rm project.sh
-
-    cd /home/$USER
-    echo "alias project=\"project\"" >> .bash_aliases
-    echo "alias run=\"run\"" >> .bash_aliases
-
+    rm project
+    
 else
     echo "Invalid parameter [$1]. Type [$0 help] for details."
 fi
