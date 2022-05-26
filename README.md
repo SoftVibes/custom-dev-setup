@@ -27,25 +27,33 @@ git clone https://github.com/SoftVibes/custom-dev-setup
 ```
 
 CD into the cloned repository :-
-```cd /custom-dev-setup/```
+```bash
+cd /custom-dev-setup/
+```
 
 Now, you can install or uninstall tools & even get help. The following are some example commands :-
 
 For help :-
-```shell
+```bash
 ./help.sh
 ```
 
 For installing everything :-
-```console
+```bash
 ./install.sh
 ```
 
 For uninstalling everything :-
-```./uninstall.sh```
+```bash
+./uninstall.sh
+```
 
 For installing specific tools :-
-```./install.sh python node```
+```bash
+./install.sh python node
+```
 
 For uninstalling specific tools :-
-```./uninstall.sh code node```
+```bash
+./uninstall.sh code node
+```
