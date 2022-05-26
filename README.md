@@ -22,7 +22,9 @@ This is a custom set of BASH scripts I wrote to quickly setup some basic develop
 ## How to use
 
 First clone the repository :-
-```git clone https://github.com/SoftVibes/custom-dev-setup```
+```bash
+git clone https://github.com/SoftVibes/custom-dev-setup
+```
 
 CD into the cloned repository :-
 ```cd /custom-dev-setup/```
@@ -30,10 +32,14 @@ CD into the cloned repository :-
 Now, you can install or uninstall tools & even get help. The following are some example commands :-
 
 For help :-
-```./help.sh```
+```shell
+./help.sh
+```
 
 For installing everything :-
-```./install.sh```
+```console
+./install.sh
+```
 
 For uninstalling everything :-
 ```./uninstall.sh```
