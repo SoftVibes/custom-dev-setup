@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo ""
 echo "Help for dev setup :-"
 echo ""
@@ -15,7 +17,9 @@ echo "  [...tools] :- Space seperated list of tools to be installed/uninstalled.
 echo "                Can be either of the following :-"
 echo "     > [python] - Python interpreter & Pip."
 echo "     > [node] - NVM(Node version manager), the current version of NodeJS interpreter & NPM."
-echo "     > [cpp] - G++ compiler & other minor build tools."
+echo "     > [cpp] or [c++] - G++ compiler & other minor build tools."
+echo "     > [project] - Custom sripts for creating and running projects with ease."
+echo "     > [code] - Visual Studio Code."
 echo ""
 echo "     NOTE - You may install/uninstall all the tools by leaving the [...tools] argument"
 echo "            blank. You should also note that uninstalling tools uninstalls the tools"

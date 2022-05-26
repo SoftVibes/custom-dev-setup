@@ -1,27 +1,45 @@
 # Custom Dev Setup (using BASH)
 
-This is a custom set of BASH scripts I wrote to quickly setup some basic development tools when moving to a new environment. However, this uses APT and Linux file structure which is why this won't work on Windows :( This will install Python, NodeJS, GNU C++ & Visual Studio Code and also install some scripts that help setup projects easily.
+This is a custom set of BASH scripts I wrote to quickly setup some basic development tools when moving to a new environment. However, this uses APT and Linux file structure which is why this won't work on Windows or distros that use Pamac :( This will install Python, NodeJS, GNU C++ & Visual Studio Code and also install some scripts that help setup projects easily.
 
 
 ## What each script does
 
-* main.sh - Helps install or uninstall multiple of the other scripts at once.
+* help.sh - Provides help for using the entire tool
 
-* project_setup.sh - Installs the project and run scripts. These help quickly create code projects with some boilerplate code.
+* install.sh - Installs user-mentioned tools
 
-* project.sh - Contains one of the scripts installed through project_setup.sh
+* uninstall.sh - Uninstalls user-mentioned tools
 
-* tools.sh - Installs Python, NodeJS, GNU C++ as well as Visual Studio Code.
+* project.sh - Script for the custom project tool. This gets copied to /usr/bin/ upon installation
 
+* run.sh - Script for the custom project tool. This too, gets copied to /usr/bin upon installation
+
+* /install/*.sh - Scripts that are run upon installation, specific to each tool
+
+* /uninstall/*.sh - Scripts that are run upon uninstallation, specific to each tool
 
 ## How to use
 
-You can download either of the scripts and use them individually.
+First clone the repository :-
+```git clone https://github.com/SoftVibes/custom-dev-setup```
 
-* The main.sh script needs all of the other scripts to be present in order to be run.
+CD into the cloned repository :-
+```cd /custom-dev-setup/```
 
-* The project_setup.sh needs the project.sh script to be present in order to be run & similarly, the project.sh script can't be installed without the project_setup.sh script.
+Now, you can install or uninstall tools & even get help. The following are some example commands :-
 
-* The tools.sh script can be run without any of the other scripts.
+For help :-
+```./help.sh```
 
-All of the scripts also include help functionality to provide details on what to use them for how to use them.
+For installing everything :-
+```./install.sh```
+
+For uninstalling everything :-
+```./uninstall.sh```
+
+For installing specific tools :-
+```./install.sh python node```
+
+For uninstalling specific tools :-
+```./uninstall.sh code node```

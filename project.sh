@@ -95,6 +95,8 @@ then
     echo "Empty NodeJS project created."
     echo ""
 
+    code .
+
 elif [ $1 == "c++" ] || [ $1 == "cpp" ]
 then
     echo ""
@@ -113,6 +115,8 @@ then
 
     echo "Empty C++ project created."
     echo ""
+
+    code .
 
 else
     echo ""
