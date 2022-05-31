@@ -35,7 +35,7 @@ then
     echo ""
 
     touch main.py
-    echo "print(\"Hello World!\")s" > main.py
+    echo "print(\"Hello World!\")" > main.py
     
     touch requirements.txt
 
