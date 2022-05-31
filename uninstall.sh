@@ -37,4 +37,5 @@ else
             echo "Invalid argument [$var]"
             echo ""
         fi
+    done
 fi
