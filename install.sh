@@ -1,13 +1,13 @@
 #!/bin/bash
 
-sudo cd /install
+cd install
 
 if [ -z $1 ]
 then
     ./python.sh
     ./node.sh
     ./cpp.sh
-    ./project.sh install
+    ./project.sh
 
 else
     for var in $@

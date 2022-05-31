@@ -1,13 +1,13 @@
 #!/bin/bash#!/bin/bash
 
-sudo cd /uninstall
+cd uninstall
 
 if [ -z $1 ]
 then
     ./python.sh
     ./node.sh
     ./cpp.sh
-    ./project.sh uninstall
+    ./project.sh
 
 else
     for var in $@
